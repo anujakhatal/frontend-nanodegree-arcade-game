@@ -2,17 +2,17 @@
 # Udacity - Classic Arcade Game
 
 ## Synopsis
-This is a Classc arcade game for the forntend nanodegree course.
+This is a Classic arcade game for the Front End Nano degree course.
 
 #### Goal of the game
-the goal of this game os to collect as many diamonds as possible without hitting the friendly looking bugs or water. You get 1 point for every diamond collected. The number of bugs and their speed increases as the game progresses. 
+the goal of this game is to collect as many diamonds as possible without hitting the friendly looking bugs or water. You get 1 point for every diamond collected. The number of bugs and their speed increases as the game progresses. 
 
 
 #### Movement and Controls
 You can move the princess by using the main up/right/left/down arrow keys on the keyboard.
 
 ## Links to GitHub Repository (Master Branch)
-To be added to github. Upload soon
+To be added to Github. Upload soon
 
 ## Installation
 To run the application:

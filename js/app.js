@@ -40,7 +40,7 @@ Actor.prototype.render = function() {
 var Enemy = function(x, y, sprite) {
   sprite = sprite || 'images/lady-bug.png';
   Actor.call(this, x, y, sprite);
-  this.speed = getRandomSpeed(); // units = [px/dt]
+  this.speed = Math.floor(Math.random()*(200 - 100 + 1) + 100);// units = [px/dt]
 };
 Enemy.prototype = Object.create(Actor.prototype);
 Enemy.prototype.hitBox = {'x': 101, 'y': 83};
@@ -49,11 +49,11 @@ Enemy.prototype.constructor = Enemy;
 Enemy.prototype.update = function(dt) {
   // update position and wrap-around if past edge
   if (this.x <= (canvas.width + this.hitBox.x/2)) {
-    this.x += (this.speed + getDifficulty()) * dt;
+    this.x += (this.speed + (playerScore*25)) * dt;
   } else {
     this.x = -this.hitBox.x;
     this.y = selectRandom(this.startY);
-    this.speed = getRandomSpeed();
+    this.speed = Math.floor(Math.random()*(200 - 100 + 1) + 100);
   }
 
   // handle collisions with player
